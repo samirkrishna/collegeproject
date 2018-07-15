@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.83"
+        android:id="@+id/frag1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="Every day is not a Sunday"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Timetable"
+                android:textColor="#FFFFFF"
+                android:id="@+id/ttc2"
+                android:textSize="18sp"
+                android:background="@drawable/roundbutton"
+                android:layout_margin="5dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="Syllabus"
+                android:textSize="18sp"
+                android:id="@+id/sc2"
+                android:background="@drawable/roundbutton"
+                android:layout_margin="5dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Attendance"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:id="@+id/ac2"
+                android:background="@drawable/roundbutton"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

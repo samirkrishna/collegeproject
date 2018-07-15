@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+        <item android:title="Student Corner">
+            <menu>
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_cse"
+            android:icon="@drawable/ic_desktop_mac_black_24dp"
+            android:title="CSE" />
+        <item
+            android:id="@+id/nav_ece"
+            android:icon="@drawable/ic_memory_black_24dp"
+            android:title="ECE" />
+        <item
+            android:id="@+id/nav_eee"
+            android:icon="@drawable/ic_ac_unit_black_24dp"
+            android:title="EEE" />
+        <item
+            android:id="@+id/nav_mec"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="MEC" />
+        <item
+            android:id="@+id/nav_it"
+            android:icon="@drawable/ic_desktop_windows_black_24dp"
+            android:title="IT" />
+            </menu>
+        </item>
+
+
+    <item android:title="University Corner">
+        <menu>
+            <item
+                android:id="@+id/nav_collegeinfo"
+                android:icon="@drawable/ic_menu_send"
+                android:title="College Info" />
+            <item
+                android:id="@+id/nav_placements"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Placements" />
+            <item
+                android:id="@+id/nav_results"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Results" />
+            <item
+                android:id="@+id/nav_examsinfo"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Exams Info" />
+            <item
+                android:id="@+id/nav_clubs"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Clubs" />
+            <item
+                android:id="@+id/nav_facultyinfo"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Faculty Info" />
+            <item
+                android:id="@+id/nav_festevents"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Fest Events-2019" />
+            <item
+                android:id="@+id/nav_hostelinfo"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Hostel Info" />
+            <item
+                android:id="@+id/nav_contactus"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/nav_developerinfo"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Developer Info" />
+
+
+        </menu>
+    </item>
+
+</menu>
