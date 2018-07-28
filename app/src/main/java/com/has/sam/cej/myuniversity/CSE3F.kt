@@ -26,7 +26,7 @@ class CSE3F :Fragment() {
             startActivity(Intent(activity,Syllabus3C::class.java))
         })
         ac3?.setOnClickListener({
-            startActivity(Intent(activity,Syllabus3C::class.java))
+            startActivity(Intent(activity,Attendance3C::class.java))
         })
         return v
 

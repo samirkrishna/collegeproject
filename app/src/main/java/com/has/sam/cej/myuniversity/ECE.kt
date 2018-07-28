@@ -8,6 +8,7 @@ import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
 import android.support.v4.view.ViewPager
 import android.os.Bundle
+import android.support.design.widget.TabLayout
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
@@ -40,6 +41,10 @@ class ECE : AppCompatActivity() {
 
         // Set up the ViewPager with the sections adapter.
         container.adapter = mSectionsPagerAdapter
+
+        container.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tabss))
+        tabss.addOnTabSelectedListener(TabLayout.ViewPagerOnTabSelectedListener(container))
+
 
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
@@ -78,12 +83,22 @@ class ECE : AppCompatActivity() {
         override fun getItem(position: Int): Fragment {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
+
+
+            when(position)
+            {
+                0->return ECE1F()
+                1->return ECE2F()
+                2->return ECE3F()
+                3->return ECE4F()
+            }
+
             return PlaceholderFragment.newInstance(position + 1)
         }
 
         override fun getCount(): Int {
             // Show 3 total pages.
-            return 3
+            return 4
         }
     }
 

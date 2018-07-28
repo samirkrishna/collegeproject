@@ -83,7 +83,7 @@ class MyUniversity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 Glide.with(this@MyUniversity).
                         load(url2).into(iview2!!)
 
-                var url3 = p0.child("Image2").getValue().toString()
+                var url3 = p0.child("Image3").getValue().toString()
                 Glide.with(this@MyUniversity).
                         load(url3).into(iview3!!)
 
@@ -158,6 +158,18 @@ class MyUniversity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.nav_it -> {
                 startActivity(Intent(this@MyUniversity,IT::class.java))
+            }
+            R.id.nav_collegeinfo -> {
+                startActivity(Intent(this@MyUniversity,CollegeInfo::class.java))
+            }
+            R.id.nav_results -> {
+                startActivity(Intent(this@MyUniversity,Results::class.java))
+            }
+            R.id.nav_examsinfo -> {
+                startActivity(Intent(this@MyUniversity,ExamsInfo::class.java))
+            }
+            R.id.nav_contactus -> {
+                startActivity(Intent(this@MyUniversity,ContactUs::class.java))
             }
         }
 

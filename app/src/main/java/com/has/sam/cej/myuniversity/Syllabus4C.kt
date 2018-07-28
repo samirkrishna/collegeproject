@@ -18,7 +18,7 @@ class Syllabus4C : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.syllabus4c)
         imageView=findViewById(R.id.ivcs4)
-        mRef= Firebase("https://collegeproject-3163b.firebaseio.com/Users")
+        mRef= Firebase("https://collegeproject-3163b.firebaseio.com/CSE")
         mRef?.addValueEventListener(object : ValueEventListener {
             override fun onCancelled(p0: FirebaseError?) {
 
@@ -27,7 +27,7 @@ class Syllabus4C : AppCompatActivity() {
             }
 
             override fun onDataChange(p0: DataSnapshot?) {
-                var url = p0!!.child("Click").getValue().toString()
+                var url = p0!!.child("CSE4S").getValue().toString()
                 Glide.with(this@Syllabus4C).
                         load(url).into(imageView!!)
 

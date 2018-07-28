@@ -22,11 +22,14 @@ class CSE2F :Fragment() {
         ttc2?.setOnClickListener({
 
 
-            var intent = Intent(getActivity(),TimeTable::class.java)
+            var intent = Intent(getActivity(),TimeTable2C::class.java)
             startActivity(intent)
         })
         sc2?.setOnClickListener({
             startActivity(Intent(activity,Syllabus2C::class.java))
+        })
+        ac2?.setOnClickListener({
+            startActivity(Intent(activity,Attendance2C::class.java))
         })
         return v
 

@@ -25,7 +25,7 @@ class CSE4F :Fragment() {
             startActivity(Intent(activity,Syllabus4C::class.java))
         })
         ac4?.setOnClickListener({
-            startActivity(Intent(activity,Syllabus4C::class.java))
+            startActivity(Intent(activity,Attendance4C::class.java))
         })
         return v
 

@@ -18,7 +18,7 @@ class Attendance2C : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.attendance2c)
         imageView=findViewById(R.id.ivca2)
-        mRef= Firebase("https://collegeproject-3163b.firebaseio.com/Users")
+        mRef= Firebase("https://collegeproject-3163b.firebaseio.com/CSE")
         mRef?.addValueEventListener(object : ValueEventListener {
             override fun onCancelled(p0: FirebaseError?) {
 
@@ -27,7 +27,7 @@ class Attendance2C : AppCompatActivity() {
             }
 
             override fun onDataChange(p0: DataSnapshot?) {
-                var url = p0!!.child("Click").getValue().toString()
+                var url = p0!!.child("CSE2A").getValue().toString()
                 Glide.with(this@Attendance2C).
                         load(url).into(imageView!!)
 

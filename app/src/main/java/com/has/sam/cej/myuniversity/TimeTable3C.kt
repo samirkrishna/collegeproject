@@ -18,7 +18,7 @@ class TimeTable3C : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.timetable3c)
         imageView=findViewById(R.id.imageView3)
-        mRef= Firebase("https://collegeproject-3163b.firebaseio.com/Users")
+        mRef= Firebase("https://collegeproject-3163b.firebaseio.com/CSE")
         mRef?.addValueEventListener(object : ValueEventListener {
             override fun onCancelled(p0: FirebaseError?) {
 
@@ -27,7 +27,7 @@ class TimeTable3C : AppCompatActivity() {
             }
 
             override fun onDataChange(p0: DataSnapshot?) {
-                var url = p0!!.child("Click").getValue().toString()
+                var url = p0!!.child("CSE3TT").getValue().toString()
                 Glide.with(this@TimeTable3C).
                         load(url).into(imageView!!)
 
